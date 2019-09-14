@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.header {
+  padding: 8px;
+  text-align: center;
+  background: #3b3334;
+  color: white;
+  font-size: 30px;
+}
+/* Page Content */
+.content {padding:10px;}
+body {
+  background: #FFFFFF;
+  text-align: center;
+  padding: 3f00px 20px 10px;
+  font size: 16px;
+}
+.action {
+height: 200px
+width: 900px
+}
+</style>
+
+<div class="header">
+    <h1>Welcome to Encryptonite</h1>
+    <p>A Multilayer PDF Encryptor Tool</p>
+</div>
+
+<div class="content"></div>
+
+<div class="textbox" style="padding: 7px;">
+    
+    <p> Please upload the PDF file you want to be encrypted below. <p>
+    <p> You have 2 options for encryption: single-layer or multi-layer encryption. <p>
+    <p> Single layer encryption will require you to create one password on your PDF file. <p>
+    <p> Multilayer encryption will require you create two passwords on your PDF file.</p>
+
+</div>
+
+<div class="image" style="padding: 7px;">
+    <img src="pdf.png" alt="" width="200" height="200" >
+</div>
+
+
+<!-- upload button + password textbox -->
+<form action="/results" method="post">
+
+    <input type="file" name="folder" webkitdirectory mozdirectory /><br>
+    <br style=“line-height:2;”>
+
+    <input placeholder= "Example: Password!" type="text" name="password 1" />
+    <input placeholder= "Example: Password!" type="text" name="password 2" />
+    <input class="btn auto-track" type="submit" />
+
+</form>
+</body>
