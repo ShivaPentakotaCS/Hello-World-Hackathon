@@ -1,5 +1,5 @@
 # Hello-World-Hackathon
-*A pdf encryptor called Enkryptonite*
+*A pdf encryptor called nKryptonite*
 
 The inspiration for nKryptonite came from the lack of a web-based PDF folder encrypting platforms. From our experience, while applying for colleges we had to submit multiple PDFs of sensitive information (i.e. our social security information, passports, immunization records).
 
