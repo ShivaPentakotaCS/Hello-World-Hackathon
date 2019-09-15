@@ -53,7 +53,7 @@ width: 900px
 
 </style>
 
-<img src="nKryptonite.png" alt="">
+<img src="static/nKryptonite.png" alt="">
 
 <div class="row">
     <div class="column">
@@ -63,7 +63,7 @@ width: 900px
         </div>
 
         <div class="textbox" style="">
-            <p> Please upload a PDF folder that you want to be encrypted below.
+            <p> Please upload a PDF folder you want to be encrypted below.
                 You have 2 options for encryption: single-layer or multi-layer encryption.
                 Single layer encryption will require you to create one password on your PDF file. 
                 Multilayer encryption will require you create two passwords on your PDF file.</p>
@@ -72,15 +72,14 @@ width: 900px
 
     <div class="column">
         <div class="image" style="padding: 0px;">
-            <img src="pdf.png" alt="" width="200" height="200" >
+            <img src="static/pdf.png" alt="" width="200" height="200" >
         </div>
 
-
-
 <!-- upload button + password textbox -->
-        <form action="/results" method="post">
+        <form action="/results" method="post" enctype="multipart/form-data">
 
         <input type="file" name="folder" webkitdirectory mozdirectory /><br>
+        <!--<input id="fileupload" name="zipped folder" type="file" /><br>-->
         <br style=“line-height:2;”>
 
         <input placeholder= "Example: Password!" type="text" name="password 1" />
